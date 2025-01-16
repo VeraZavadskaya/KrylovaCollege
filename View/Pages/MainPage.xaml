@@ -1,0 +1,25 @@
+﻿<Page x:Class="KrylovaCollege.View.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KrylovaCollege.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1100"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Image Source="\Resources\Image\IMG_1003.JPG"/>
+        <Image Source="\Resources\Image\IMG_20190124_182913.jpg" Grid.Column="1" Grid.Row="1"/>
+        <Image Source="\Resources\Image\IMG_5299.JPG" Grid.Row="1"/>
+        <Image Source="\Resources\Image\IMG_8699.JPG" Grid.Column="1" />
+    </Grid>
+</Page>
