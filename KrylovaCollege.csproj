@@ -126,6 +126,12 @@
     <Compile Include="Model\Special.cs">
       <DependentUpon>KrylovaCollegeModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\sysdiagrams.cs">
+      <DependentUpon>KrylovaCollegeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\View_1.cs">
+      <DependentUpon>KrylovaCollegeModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\AddActivityPage.xaml.cs">
       <DependentUpon>AddActivityPage.xaml</DependentUpon>
     </Compile>

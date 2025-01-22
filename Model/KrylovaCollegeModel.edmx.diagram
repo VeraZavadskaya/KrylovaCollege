@@ -5,15 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="adda4cd5dcb94198a18b462066b1cace" Name="Diagram1">
-        <EntityTypeShape EntityType="KrylovaCollegeModel.Activity" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="KrylovaCollegeModel.Direction" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="KrylovaCollegeModel.Group" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="KrylovaCollegeModel.Journal" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="KrylovaCollegeModel.Special" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
-        <AssociationConnector Association="KrylovaCollegeModel.FK_Activity_Direction" ManuallyRouted="false" />
-        <AssociationConnector Association="KrylovaCollegeModel.FK_Journal_Activity" ManuallyRouted="false" />
-        <AssociationConnector Association="KrylovaCollegeModel.FK_Group_Special" ManuallyRouted="false" />
-        <AssociationConnector Association="KrylovaCollegeModel.FK_Journal_Group" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.Activity" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.Direction" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.Group" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.Journal" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.Special" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="KrylovaCollegeModel.View_1" Width="1.5" PointX="7.75" PointY="0.75" />
+        <AssociationConnector Association="KrylovaCollegeModel.FK_Activity_Direction" />
+        <AssociationConnector Association="KrylovaCollegeModel.FK_Journal_Activity" />
+        <AssociationConnector Association="KrylovaCollegeModel.FK_Group_Special" />
+        <AssociationConnector Association="KrylovaCollegeModel.FK_Journal_Group" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

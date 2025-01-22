@@ -24,8 +24,6 @@ namespace KrylovaCollege.View.Pages
         {
             InitializeComponent();
 
-            ReportLv.ItemsSource = App.context.Journal.ToList();
-
             GroupCmb.SelectedValuePath = "Id";
             GroupCmb.DisplayMemberPath = "Name";
             GroupCmb.ItemsSource = App.context.Group.ToList();
@@ -33,15 +31,20 @@ namespace KrylovaCollege.View.Pages
 
         private void ChooseBtn_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrEmpty(DateStartDp.Text) && string.IsNullOrEmpty(DateFinishDp.Text) && string.IsNullOrEmpty(GroupCmb.Text))
+            //    if(string.IsNullOrEmpty(DateStartDp.Text) && string.IsNullOrEmpty(DateFinishDp.Text) && string.IsNullOrEmpty(GroupCmb.Text))
+            //    {
+            //        MessageBox.Show("Заполните все поля");
+            //    }
+            //    else
             {
-                MessageBox.Show("Заполните все поля");
-            }
-            else
-            {
-                int chooseGroup = Convert.ToInt32(GroupCmb.SelectedValue);
-                var a = (DateTime) DateStartDp.SelectedDate;
+                //int chooseGroup = Convert.ToInt32(GroupCmb.SelectedValue);
+                var a = (DateTime)DateStartDp.SelectedDate;
                 var b = (DateTime)DateFinishDp.SelectedDate;
+                ReportDg.ItemsSource = App.context.Journal
+                    //.Where(j => j.IdGroup == chooseGroup)
+                    .Select(o => o.DateEvent >= a && o.DateEvent <= b)
+                    .ToList();
+
 
             }
         }

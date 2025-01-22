@@ -32,25 +32,17 @@
         <DatePicker Name="DateFinishDp" Grid.Row="1" Grid.Column="2" Width="300"/>
         <ComboBox Name="GroupCmb" Grid.Column="2" Grid.Row="2" Margin="100 10"/>
 
-        <ListView Name="ReportLv" Grid.Row="4" Grid.ColumnSpan="3">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Дата"
-                                    DisplayMemberBinding="{Binding DateEvent, StringFormat=dd.MM.yyyy}"/>
-                    <GridViewColumn Header="Группа"
-                                    DisplayMemberBinding="{Binding Group.Name}"/>
-                    <GridViewColumn Header="Спецаильность"
-                                    DisplayMemberBinding="{Binding Group.Special.Name}"/>
-                    <GridViewColumn Header="Активность"
-                                    DisplayMemberBinding="{Binding Activity.Name}"/>
-                    <GridViewColumn Header="Направление"
-                                    DisplayMemberBinding="{Binding Activity.Direction.Name}"/>
-                    <GridViewColumn Header="Балл"
-                                    DisplayMemberBinding="{Binding Mark}"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        
+        <DataGrid Name="ReportDg" Grid.Row="4" Grid.ColumnSpan="3" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding DateEvent, StringFormat=dd.MM.yyyy}"/>
+                <DataGridTextColumn Header="Группа" Binding="{Binding Group.Name}"/>
+                <DataGridTextColumn Header="Специальность" Binding="{Binding Group.Special.Name}"/>
+                <DataGridTextColumn Header="Активность" Binding="{Binding Activity.Name}"/>
+                <DataGridTextColumn Header="Направление" Binding="{Binding Activity.Direction.Name}"/>
+                <DataGridTextColumn Header="Балл" Binding="{Binding Mark}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
         <Button Name="ChooseBtn" Content="Выбрать" Grid.Row="7" FontSize="30" Margin="30 10" Click="ChooseBtn_Click"/>
         
     </Grid>

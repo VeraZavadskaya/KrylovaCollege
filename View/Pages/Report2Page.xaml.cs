@@ -24,5 +24,22 @@ namespace KrylovaCollege.View.Pages
         {
             InitializeComponent();
         }
+
+        private void UpdateReportBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if(string.IsNullOrEmpty(DateStartDp.Text) && string.IsNullOrEmpty(DateFinishDp.Text))
+            {
+                MessageBox.Show("Заполните все поля");
+            }
+            else
+            {
+                var a = (DateTime)DateStartDp.SelectedDate;
+                var b = (DateTime)DateFinishDp.SelectedDate;
+
+                var qwery = App.context.View_1.Where(v => v.DateEvent >= a && v.DateEvent <= b).GroupBy(x => x.Name).Select(g => new { Группа = g.Key, Балл = g.Sum(s => s.Mark) }).OrderBy(n => n.Группа);
+
+                ReportDg.ItemsSource = qwery.ToList();
+            }
+        }
     }
 }

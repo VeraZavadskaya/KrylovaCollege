@@ -30,5 +30,7 @@ namespace KrylovaCollege.Model
         public virtual DbSet<Group> Group { get; set; }
         public virtual DbSet<Journal> Journal { get; set; }
         public virtual DbSet<Special> Special { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<View_1> View_1 { get; set; }
     }
 }
