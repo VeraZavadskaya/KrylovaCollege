@@ -15,7 +15,7 @@
         <Border BorderThickness="0 0 5 0">
             <Grid Margin="10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
+                    <RowDefinition Height="20" />
                     <RowDefinition Height="80" />
                     <RowDefinition Height="50" />
                     <RowDefinition Height="80" />
@@ -26,13 +26,15 @@
                     <RowDefinition Height="50" />
                     <RowDefinition Height="80" />
                     <RowDefinition Height="50" />
+                    <RowDefinition Height="80" />
                 </Grid.RowDefinitions>
                 <Button Name="AddGroupBtn" Grid.Row="1" Content="Добавить группу" FontSize="30" Click="AddGroup_Click"/>
                 <Button Name="AddActivityBtn" Grid.Row="3" Content="Добавить активность" FontSize="30" Click="AddActivityBtn_Click"/>
                 <Button Name="JournalBtn" Grid.Row="5" Content="Учет" FontSize="30" Click="JournalBtn_Click"/>
                 <Button Name="Report1Btn" Grid.Row="7" Content="Отчет 1" FontSize="30" Click="Report1Btn_Click"/>
                 <Button Name="Report2Btn" Grid.Row="9" Content="Отчет 2" FontSize="30" Click="Report2Btn_Click" />
-            </Grid>
+                <Button Name="Report3Btn" Grid.Row="11" Content="Отчет 3" FontSize="30" Click="Report3Btn_Click"/>
+            </Grid> 
         </Border> 
         <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
     </Grid>

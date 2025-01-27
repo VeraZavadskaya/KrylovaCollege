@@ -21,7 +21,7 @@
             <RowDefinition Height="200" />
             <RowDefinition Height="70" />
             <RowDefinition Height="70" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TextBlock Text="Выберите начало периода" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <TextBlock Text="Выберите конец периода" Grid.Column="2" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>

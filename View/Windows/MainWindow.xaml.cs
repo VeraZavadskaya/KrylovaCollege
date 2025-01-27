@@ -52,5 +52,10 @@ namespace KrylovaCollege
         {
             MainFrame.Navigate(new Report2Page());
         }
+
+        private void Report3Btn_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Report3Page()); 
+        }
     }
 }

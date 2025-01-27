@@ -88,6 +88,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\Report3Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\Report4Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -149,6 +157,12 @@
     </Compile>
     <Compile Include="View\Pages\Report2Page.xaml.cs">
       <DependentUpon>Report2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Report3Page.xaml.cs">
+      <DependentUpon>Report3Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\Report4Page.xaml.cs">
+      <DependentUpon>Report4Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
